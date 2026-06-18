@@ -1,18 +1,21 @@
-import express from 'express';
+import express, { request, response } from 'express';
 import pkg from '../package.json';
 import { AppDataSource } from './database/dataSource';
-import { User } from './database/entities/users';
+import { Router } from 'express';
 
 async function main(){
 
     const app = express();
+    const usersRouter = Router();
     
     await AppDataSource.initialize();
     app.get("/", (req, res) => {
         res.json({ name: pkg.name, version: pkg.version })
     });
 
-    // app.post("/users/new", );
+    // usersRouter.get('/', (request, response): => {
+    //     return response.json()
+    // });
 
     // app.put("/users/update/:id", )
 
