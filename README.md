@@ -13,4 +13,6 @@
 - Como subir o servidor localmente:
   Para subir abra o vscode e digite no terminal "npm start", depois no navegador, cole "http://localhost:3000/"
 
+- Lista de rotas indisponivel.
+
   
