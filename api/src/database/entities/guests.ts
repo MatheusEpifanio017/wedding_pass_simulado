@@ -6,10 +6,10 @@ export class Guest {
     id: number;
 
     @Column({ name: "first_name", type: "varchar" })
-    firtsname: string;
+    firstname: string;
 
     @Column({ name: "last_name", type: "varchar" })
-    lastsname: string;
+    lastname: string;
 
     @Column({ name: "email", type: "varchar" })
     email: string;
